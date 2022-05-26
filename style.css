@@ -1,0 +1,124 @@
+body{
+    
+    background-color: grey;
+    font-family: var(--bs-body-font-family);
+    margin: 0;
+}
+
+.carousel-inner img{
+    width: 100%;
+}
+.carousel-inner h1{
+    text-shadow: 1px 1px #000;
+}
+.carousel-inner .carousel-caption{
+background: rgba(200,200,200,0.3);
+border-radius: 7px;
+}
+h1{
+    color: white;
+}
+code{
+    font-size: 135% !important;
+}
+
+.fixedimg {
+    height: 250px;
+    background-image: url(img/خلفيات-كمبيوتر-موقع-محيط-_182048401_-__.jpg);
+    background-attachment: fixed;
+}
+h2{
+    display: block;
+    color: white;
+    padding-top: 15px;
+}
+.fixedimg1{
+    height: 250px;
+    background-image: url(img/images.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+} 
+.card{
+    border: 1px solid;
+}
+
+.card-header:hover{
+    display: block;
+    background-color: #000;
+    color: white;
+}
+.card-header:focus{
+    background-color: lightblue;
+    color: white;
+    border: 5px solid blue;
+}
+.myicon{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+footer{
+    
+    margin-top: 50px;
+    padding: 10px;
+    padding-bottom: 1px;
+    margin-bottom: -25;
+    background-color: #212529;
+}
+a{ 
+    color:#ccccff
+
+}
+a:hover{
+    color:#fff !important
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px #fff,
+                -10px -10px 20px #fff;
+}
+.text-light-info{
+    color:#69DBEC;
+
+}
+
+.btnbefo{
+    position: relative;
+    left: 40px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue transparent;
+top: 30px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 110px;
+background-color: lightblue;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 30px;
+}
